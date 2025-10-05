@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Satyabrata Swain — Java Developer</title>
+  <meta name="description" content="Satyabrata Swain — Java Developer. Portfolio site (HTML/CSS) showcasing projects and skills.">
+  <style>
+    :root{
+      --bg:#f3e8ff; /* light purple background */
+      --card:#faf5ff;
+      --muted:#000000; /* black content */
+      --accent:#4b0082; /* deep purple title */
+      --glass: rgba(0,0,0,0.05);
+      --radius:14px;
+      --maxw:1000px;
+      --ff:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:var(--ff); background:var(--bg); color:var(--muted); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      display:flex; align-items:center; justify-content:center; padding:40px 20px;
+    }
+    .container{width:100%; max-width:var(--maxw);}
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius); padding:28px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      border:1px solid rgba(0,0,0,0.1);
+    }
+
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:14px}
+    .avatar{
+      width:56px; height:56px; border-radius:10px; background:linear-gradient(135deg,var(--accent),#b19cd9);
+      display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; font-size:18px; box-shadow:0 6px 18px rgba(75,0,130,0.2);
+    }
+    h1{margin:0; font-size:22px; color:var(--accent)}
+    .subtitle{color:var(--muted); font-size:13px}
+
+    nav{display:flex; gap:12px}
+    nav a{color:var(--muted); text-decoration:none; font-size:14px; padding:8px 12px; border-radius:10px}
+    nav a:hover{background:var(--glass); color:var(--accent)}
+
+    .grid{display:grid; grid-template-columns: 1fr 360px; gap:22px; margin-top:20px}
+    .left{padding-right:6px}
+    .hero{
+      background:rgba(255,255,255,0.7); padding:20px; border-radius:12px;
+    }
+    .name{font-size:26px; margin:0 0 6px; color:var(--accent)}
+    .role{color:var(--accent); font-weight:600; margin:0 0 10px}
+    .about{color:var(--muted); line-height:1.6}
+
+    .skills{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+    .skill{background:rgba(0,0,0,0.05); padding:8px 10px; border-radius:999px; font-size:13px; color:var(--muted)}
+
+    .projects{margin-top:18px}
+    .project{background:rgba(255,255,255,0.7); padding:14px; border-radius:10px; margin-bottom:12px; border:1px solid rgba(0,0,0,0.1)}
+    .project h3{margin:0 0 6px; color:var(--accent)}
+    .project p{margin:0; color:var(--muted); font-size:14px}
+
+    .right{position:relative}
+    .contact-card{background:rgba(255,255,255,0.8); padding:18px; border-radius:12px}
+    .contact-card p{margin:6px 0; color:var(--muted)}
+    .btn{display:inline-block; text-decoration:none; padding:10px 14px; border-radius:10px; background:transparent; border:1px solid var(--accent); color:var(--accent); font-weight:600}
+
+    footer{margin-top:16px; color:var(--muted); font-size:13px; text-align:center}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      .right{order:2}
+    }
+
+    .meta{display:flex; gap:8px; margin-top:8px}
+    .chip{background:rgba(0,0,0,0.05); padding:6px 8px; border-radius:8px; font-size:13px; color:var(--muted)}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="brand">
+          <div class="avatar">SS</div>
+          <div>
+            <h1>Satyabrata Swain</h1>
+            <div class="subtitle">Java Developer • Bengaluru (Open to opportunities)</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <div class="grid">
+        <div class="left">
+          <section class="hero" id="about">
+            <p class="name">Satyabrata Swain</p>
+            <p class="role">Java Developer</p>
+            <p class="about">I build reliable, maintainable backend services and polished frontends. My core focus is building full-stack solutions using Java, Spring Boot and modern web technologies. I enjoy solving problems, learning new tools, and contributing to clean, well-tested code.</p>
+
+            <div class="meta">
+              <div class="chip">Location: Bengaluru, India</div>
+              <div class="chip">Experience: Fresher / Early-career</div>
+            </div>
+
+            <div class="skills" aria-label="Tech stack">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">React</div>
+              <div class="skill">Java</div>
+              <div class="skill">Spring Boot</div>
+              <div class="skill">MySQL</div>
+            </div>
+
+            <div class="projects" id="projects">
+              <h2 style="margin-top:18px; color:var(--accent)">Projects</h2>
+              <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio (this site) — built using React. Shows projects, skills and contact details.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:20px">
+              <a class="btn" href="SATYABRATA S.pdf" target="_blank">View Resume</a>
+            </div>
+
+          </section>
+
+          <footer>
+            Built with ❤️ • Designed for Bengaluru tech jobs
+          </footer>
+        </div>
+
+        <aside class="right">
+          <div class="contact-card" id="contact">
+            <h3 style="color:var(--accent)">Contact</h3>
+            <p><strong>Email:</strong> <a href="mailto:satyabs@outlook.com" style="color:var(--accent); text-decoration:none">satyabs@outlook.com</a></p>
+            <p><strong>Phone:</strong> <span style="color:var(--muted)">8599090090 / 9439862788</span></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/satyabs9/" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none">linkedin.com/in/satyabs9</a></p>
+            <p style="color:var(--muted); font-size:13px; margin-top:8px">Available for onsite roles in Bengaluru. Open to full-time and internship opportunities.</p>
+
+            <div style="margin-top:12px; display:flex; gap:8px">
+              <a class="btn" href="mailto:satyabs@outlook.com">Email Me</a>
+              <a class="btn" href="https://www.linkedin.com/in/satyabs9/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn" href="SATYABRATA S.pdf" target="_blank">Resume</a>
+            </div>
+          </div>
+
+          <div style="height:18px"></div>
+
+          <div class="contact-card">
+            <h4 style="margin:0 0 10px; color:var(--accent)">Quick Info</h4>
+            <p style="margin:0 0 8px; color:var(--muted)"><strong>Role:</strong> Java Developer</p>
+            <p style="margin:0 0 8px; color:var(--muted)"><strong>Tech:</strong> Java, Spring Boot, React, MySQL</p>
+            <p style="margin:0; color:var(--muted)"><strong>Location:</strong> Bengaluru</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
